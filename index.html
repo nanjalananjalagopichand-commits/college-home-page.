@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Home Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        header {
+            background: navy;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 25px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 280px;
+        }
+
+        h2 {
+            color: navy;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: navy;
+            color: white;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+
+        button {
+            background: navy;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ABC Engineering College</h1>
+    <p>Welcome to Our College</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main class="container">
+
+    <section>
+        <h2>About College</h2>
+        <p>
+            ABC Engineering College provides
+            quality education and excellent
+            opportunities for students.
+        </p>
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>CSE</td>
+                <td>4 Years</td>
+            </tr>
+            <tr>
+                <td>ECE</td>
+                <td>4 Years</td>
+            </tr>
+            <tr>
+                <td>EEE</td>
+                <td>4 Years</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <input type="text"
+                   placeholder="Enter Name" required>
+
+            <input type="email"
+                   placeholder="Enter Email" required>
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 ABC Engineering College</p>
+    <p>All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
